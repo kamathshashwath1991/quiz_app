@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import './quiz_page.dart';
+
 
 class LandingPage extends StatelessWidget{
 
