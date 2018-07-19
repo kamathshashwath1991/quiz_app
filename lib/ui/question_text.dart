@@ -31,6 +31,16 @@ class QuestionTextState extends State<QuestionText> with SingleTickerProviderSta
     _fontSizeAnimationController.forward();
     }
 
+    @override
+  void didUpdateWidget(QuestionText oldWidget) {
+    // TODO: implement didUpdateWidget
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget._question != widget._question){
+      _fontSizeAnimationController.reset();
+      _fontSizeAnimationController.forward();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
